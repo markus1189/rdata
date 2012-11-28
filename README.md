@@ -3,12 +3,14 @@
 [![Build Status](https://secure.travis-ci.org/samdunne/rdata.png?branch=master)](https://travis-ci.org/samdunne/rdata)
 
 ## Installation
-
-    gem install rdata
+```ruby
+gem install rdata
+```
 
 ## Usage
-
-    require 'rdata'
+```ruby
+require 'rdata'
+```
 
 ## Stacks
 
