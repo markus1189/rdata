@@ -3,37 +3,30 @@ module RData
 	class Stack
 
 		def initialize
-			@selfStack = Array[
-				:top,
-				:size,
-				:clear,
-				:inspect,
-				:to_s
-			]
-
-			@selfStack[0] = :top
-		end
-
-		def push(x)
-			@selfStack[:top] = @selfStack[:top] + 1
-			@selfStack[@selfStack[:top]] = x
+			@selfStack = Array[]
+			@top = 0
 		end
 
 		def top
-			return @selfStack[:top]
+			return @selfStack[@top]
+		end
+
+		def push(x)
+			@top = @top + 1
+			@selfStack[@top] = x
 		end
 
 		def pop
-			if self.is_empty?
-				raise 'Underflow'
+			if self.is_empty? == "true"
+				raise '[underflow] Cannot pop data from an empty stack'
 			else
-				@selfStack[:top] = @selfStack[:top] - 1
-				return @selfStack[:top + 1]
+				@top = @top - 1
+				return @selfStack[@top + 1]
 			end 
 		end
 
 		def is_empty?
-			(@selfStack[:top] == 0) ? 'true' : 'false'
+			(@top == 0) ? 'true' : 'false'
 		end
 
 	end
