@@ -13,14 +13,16 @@
 ## Stacks
 
 ### Initialization
-	```ruby
-	@stack = RData.Stack
-	```
+
+```ruby
+@stack = RData.Stack
+```
 
 ### Operations
-	```ruby
-	@stack.push(x) 		# => Returns 'x'
-	@stack.pop 			# => Returns 'top'
-	@stack.top 			# => Returns 'top'
-	@stack.is_empty? 	# => Returns true/false
-	```
+
+```ruby
+@stack.push(x) 		# => Returns 'x'
+@stack.pop 			# => Returns 'top'
+@stack.top 			# => Returns 'top'
+@stack.is_empty? 	# => Returns true/false
+```
