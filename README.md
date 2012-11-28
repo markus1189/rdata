@@ -1,4 +1,9 @@
-ruby-datastructures
-===================
+# RData
 
-Datastructures in Ruby
+## Installation
+
+    gem install rdata
+
+## Usage
+
+    require 'rdata'

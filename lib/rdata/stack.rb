@@ -3,20 +3,20 @@ module RData
 	class Stack
 
 		def initialize
-			@selfStack = Array.extract([
+			@selfStack = Array[
 				:top,
-				:push,
-				:pop,
 				:size,
 				:clear,
 				:inspect,
 				:to_s
-			])
+			]
+
+			@selfStack[0] = :top
 		end
 
 		def push(x)
-			@selfStack[:top] = selfStack[:top] + 1
-			@selfStack[selfStack[:top]] = x
+			@selfStack[:top] = @selfStack[:top] + 1
+			@selfStack[@selfStack[:top]] = x
 		end
 
 		def top
