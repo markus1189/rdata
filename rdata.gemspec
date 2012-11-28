@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date        = '2012-11-28'
   s.homepage    = 'https://github.com/samdunne/rdata'
   s.summary     = "Common Datastructures in Ruby"
-  s.description = "A datastructures library for ruby"
+  s.description = "A datastructures library for Ruby (Nothing to do with the R language)"
 
 
   s.files       = `git ls-files`.split("\n")

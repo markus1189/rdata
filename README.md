@@ -35,3 +35,6 @@ require 'rdata'
 @stack.top 			# => Returns 'top'
 @stack.is_empty? 	# => Returns true/false
 ```
+
+### More on Stacks
+[Stacks - Wiki Link](https://github.com/samdunne/rdata/wiki/Stacks)
