@@ -7,6 +7,12 @@
 gem install rdata
 ```
 
+Or in a Gemfile
+
+```ruby
+gem 'rdata'
+```
+
 ## Usage
 ```ruby
 require 'rdata'
