@@ -1,6 +1,7 @@
 =begin
 
-This is the Stack class. It allows easy implementation of stacks and use of their operations
+This is the Stack class. It allows easy implementation of stacks and use
+of their operations
 
 # @stack = RData.Stack
 # @stack.operation
@@ -13,30 +14,31 @@ module RData
   class Stack
 
     def initialize
-      @stack = Array[]
-      @top = 0
+      @stack = []
     end
 
     def top
-      return @stack[@top]
+      @stack.last
     end
 
     def push(x)
-      @top = @top + 1
-      @stack[@top] = x
+      @stack.push(x)
     end
 
     def pop
-      if self.is_empty? == "true"
-        raise '[underflow] Cannot pop data from an empty stack'
+      if not self.is_empty?
+        @stack.pop
       else
-        @top = @top - 1
-        return @stack[@top + 1]
+        raise '[underflow] Cannot pop data from an empty stack'
       end
     end
 
     def is_empty?
-      (@top == 0) ? 'true' : 'false'
+      @stack.empty?
+    end
+
+    def size
+      @stack.size
     end
 
   end
